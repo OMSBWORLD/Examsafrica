@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+button, a{
+    cursor: pointer;
+}
+.nav-grand{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-parent{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-one{
+    width: 50%;
+}
+.nav-two{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.nav-two-one{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-two-one a{
+    color: #00040D;
+}
+.nav-two-two{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-two-two button{
+    border-radius: 4px;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.home-grand-one{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-parent-one{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.home-one-bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.home-one-bottom button{
+    font-weight: bold;
+    border-radius: 4px;
+}
+.home-two{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    background: #002099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-two-sub{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff;
+}
+.lab{
+    margin-top: 50px;
+    text-align: center;
+}
+.home-grand-three{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.home-parent-three{
+    width: 65%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.three-one, .three-two, .three-three, .three-four{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.words{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.words h3{
+    position: absolute;
+    top: 80px;
+    left: 88px;
+}
+.words p{
+    line-height: 2;
+}
+.home-four{
+    margin-top: 50px;
+    width: 100%;
+    height: 270px;
+    background: #002099;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    line-height: 2;
+}
+.home-four-sub{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #1D3797;
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+}
+.home-five{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.home-five p{
+    
+}

@@ -3,3 +3,174 @@
     padding: 0;
     box-sizing: 0;
 }
+.s-nav-parent{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-nav{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-nav div:nth-child(2){
+    margin-right: 200px;
+    color: #00070F;
+}
+.s-nav a{
+    color: #1178FF;
+}
+.sign-parent{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+}
+.sign{
+    width: 90%;
+    display: flex;
+}
+.sign-one{
+    width: 30%;
+}
+.sign-one h1{
+    width:50%;
+}
+.sign-two{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-sub-one{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+    width: 90%;
+}
+.sign-sub-two{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.sign-two input{
+    height: 40px;
+    width: 95%;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.sign button{
+    border-radius: 4px;
+    height: 50px;
+     width: 70%;
+}
+.name, .password{
+    display: flex;
+    width: 80%;
+}
+.name input, .password input{
+    width: 90%;
+}
+.log-one{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+@media screen and (max-width: 500px) {
+    .s-nav-parent{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-nav{
+        width: 90%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .s-nav div:nth-child(2){
+        font-size: 12px;
+        display: flex;
+        margin-right: 10px;
+        color: grey;
+    }
+    .s-nav a{
+        color: #1178FF;
+    }
+    .sign-parent{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .sign{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-one{
+        width: 100%;
+    }
+    .sign-one h1{
+        width:100%;
+    }
+    .sign-two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-sub-one{
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 75vh;
+        width: 90%;
+    }
+    .sign-sub-two{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sign-two input{
+        height: 30px;
+        width: 100%;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .sign button{
+        border-radius: 4px;
+        height: 40px;
+         width: 80%;
+    }
+    .name, .password{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        width: 100%;
+    }
+    .name input, .password input{
+        width: 100%;
+    }
+    .log-one{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}

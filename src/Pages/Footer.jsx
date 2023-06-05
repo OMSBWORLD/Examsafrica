@@ -2,10 +2,13 @@ import React from 'react';
 import '../Styles/Footer.css';
 import { Link } from 'react-router-dom'; 
 import home from '../assets/exams 1.png';
-import ln from '../assets/linkedin 1.png';
-import tw from '../assets/twitter 1.png';
-import insta from '../assets/instagram 1.png';
-import fb from '../assets/facebook 1.png';
+import {AiFillTwitterCircle} from 'react-icons/ai'
+import {BsFacebook} from 'react-icons/bs'
+import { FaInstagram, FaLinkedinIn} from 'react-icons/fa'
+
+
+
+
 
 
 function Footer(){
@@ -38,10 +41,10 @@ function Footer(){
                     <div className='last-three'>We Will Open The World Of Knowledge For You! This is the latest online examination system you will ever need!<br/> With our easy online exam site, you will set up your own engaging exams that fit any kind of difficulty level and be a <br/>learning expert.</div>
                     <div className='last-four-parent'>
                     <div className='last-four'>
-                        <Link to='https://www.linkedin.com/company/exams-africa/'><img src={ln} alt="" /></Link>
-                        <Link to='https://exams.africa/#0'><img src={insta} alt="" /></Link>
-                        <Link to='https://www.instagram.com/examsafrica/'><img src={tw} alt="" /></Link>
-                        <Link to='https://exams.africa/#0'><img src={fb} alt="" /></Link>
+                        <Link to='https://www.linkedin.com/company/exams-africa/'><FaLinkedinIn/></Link>
+                        <Link to='https://exams.africa/#0'><AiFillTwitterCircle/></Link>
+                        <Link to='https://www.instagram.com/examsafrica/'><FaInstagram/></Link>
+                        <Link to='https://exams.africa/#0'><BsFacebook/></Link>
                     </div>
                     </div>
                 </div>

@@ -4,27 +4,28 @@ import { Link } from 'react-router-dom';
 import e1 from '../assets/1.png';
 import e2 from '../assets/2.png';
 import exams4 from '../assets/exams4.png';
-import exams5_1 from '../assets/exams5-1.png';
-import exams5_2 from '../assets/exams5-2.png';
-import exams5_3 from '../assets/exams5-3.png';
-import exams5_4 from '../assets/exams5-4.png';
 import exams6 from '../assets/exams6.png';
 import exams7 from '../assets/exams7.png';
 import exams8 from '../assets/exams8.png';
 import exams9 from '../assets/exams9.png';
-import exams10_1 from '../assets/exams10-1.png';
-import exams10_2 from '../assets/exams10-2.png';
-import exams10_3 from '../assets/exams10-3.png';
-import exams10_4 from '../assets/exams10-4.png';
-import exams10_5 from '../assets/exams10-5.png';
 import Footer from './Footer';
-import VideoPlayer from 'react-video-js-player'
 import vid from '../assets/Examsafrica web.mp4'
+import {RxDashboard} from 'react-icons/rx'
+import {TbNotebook} from 'react-icons/tb'
+import {TbActivityHeartbeat} from 'react-icons/tb'
+import {AiOutlineDollarCircle} from 'react-icons/ai'
+import {TbWorld} from 'react-icons/tb'
+import {BsApple} from 'react-icons/bs'
+import {BsGooglePlay,} from 'react-icons/bs'
+import {BsTelegram} from 'react-icons/bs'
+import {FaWhatsapp} from 'react-icons/fa'
+
+
+
+
 
 
 function Home(){
-    const videoSrc =vid;
-    const poster = 'https://archive.org/download/examsafrica-web/Examsafrica%20web.mp4'
     return(
         <div className='home-main'>
             <div className='home-grand-one'>
@@ -37,16 +38,16 @@ function Home(){
                         <div className='exel-head'>
                             <div className=''><h1>Excel</h1></div>
                             <div className='b-p'>
-                                <div className='b1'><button style={{width: '80px' , height: '50px'}}>JAMB - UTME</button><button style={{width: '80px', height: '50px'}}>WAEC - SSCE</button><button style={{width: '80px' , height: '50px'}}>WAEC - GCE</button></div>
-                                <div className='b2'><button style={{width: '180px' , height: '50px'}}>COMMON ENTRANCE EXAM</button><button style={{width: '80px', height: '50px'}}>NECO</button></div>
+                                <div className='b1'><button style={{width: '105px' , height: '60px'}}>JAMB -<br/> UTME</button><button style={{width: '105px', height: '60px'}}>WAEC -<br/>  SSCE</button><button style={{width: '105px' , height: '60px'}}>WAEC -<br/>  GCE</button></div>
+                                <div className='b2'><button style={{width: '210px' , height: '60px'}}>COMMON ENTRANCE <br/>  EXAM</button><button style={{width: '105px', height: '60px'}}>NECO</button></div>
                             </div>
                         </div>
-                        <div>
+                        <div className='home-p'>
                             <p >Welcome to the Exams.Africa, Exams Africa is a platform designed specifically for Africans looking to practise for upcoming exams. Our platform offers a comprehensive collection of past exam questions from a wide range of subjects, allowing users to test their knowledge and improve their skills.</p>
                         </div>
                         <div className='home-one-bottom'>
-                        <Link to='/register'><button style={{background: '#002099',color: '#ffffff', width: '150px', height:'45px', border: 'none',}}>Get Started </button> </Link>
-                        <Link to='/login'><button style={{background: '#ffffff',color: '#002099', width: '150px', height: '45px',  border: '2px solid #002099'}}>Start Practising</button> </Link>
+                        <Link to='/register'><button style={{background: '#002099',color: '#ffffff', width: '160px', height:'45px', border: 'none',}}>Get Started </button> </Link>
+                        <Link to='/login'><button style={{background: '#ffffff',color: '#002099', width: '160px', height: '45px',  border: '3px solid #002099'}}>Start Practising</button> </Link>
                         </div>
                     </div>
                     <div className='home-one-two'>
@@ -55,10 +56,47 @@ function Home(){
                 </div>
             </div>
             <div className='home-two'>
-                <div className='home-two-sub'><img src={exams5_1}/><div className='jid'></div><img src={exams5_2}/><div className='jid'></div><img src={exams5_3}/><div className='jid'></div><img src={exams5_4}/></div>
+                <div className='home-two-sub'>
+                        <div className='home-two-sub-sub'>
+                            <div id='sub-sub'>
+                                <RxDashboard/>
+                                <h3>Past questions</h3>
+                            </div>
+                            <div  className='sub-sub'>
+                                <p>Thousands of past questions</p>
+                            </div>
+                        </div>
+                        <div  className='home-two-sub-sub' id='sub'>
+                            <div id='sub-sub'>
+                                <TbNotebook/>
+                                <h3>Mock Exams</h3>
+                            </div>
+                            <div  className='sub-sub'> 
+                                <p>Mock examination feature</p>
+                            </div>
+                        </div>
+                        <div  className='home-two-sub-sub' id='sub'>
+                            <div id='sub-sub'>
+                                <TbActivityHeartbeat/>
+                                <h3>Track activity</h3>
+                            </div>
+                            <div  className='sub-sub'>
+                                <p>Dashboard to track all activities</p>
+                            </div>
+                        </div>
+                        <div  className='home-two-sub-sub' id='sub'>
+                            <div id='sub-sub1'>
+                                <AiOutlineDollarCircle/>
+                                <h3>Affordable</h3>
+                            </div>
+                            <div className='sub-sub'>
+                                <p>Low cost on in-app purchases</p>
+                            </div>
+                        </div>
+                </div>
             </div>
             <div className='lab'>
-                <h3>Why ExaLab Is Best?</h3>
+                <h3>Now you have no reason to fail</h3>
             </div>
             <div className='home-grand-three'>
                 <div className='home-parent-three'>
@@ -66,14 +104,14 @@ function Home(){
                         <div><img src={exams6}/></div>
                         <div className='words'>
                             <h3>Choose Your Category</h3>
-                            <p>Choose the exam category based on your subject.<br/> This helps you differentiate between subjects that<br/>are essential for studying a particular course and<br/> subjects.</p>
+                            <p>Choose the exam category based on your subject.This helps you differentiate between subjects that are essential for studying a particular course and subjects.</p>
                             <div className='linee'></div>
                         </div>
                     </div>
                     <div className='three-two'>
                         <div className='words'>
                             <h3>Select Preferable Subject</h3>
-                            <p>The aim of this to help you see things more clearly <br/>and get a good impression of the possible options,<br/> whether you have your heart set on a particular<br/> career path or not.</p>
+                            <p>The aim of this to help you see things more clearly and get a good impression of the possible options, whether you have your heart set on a particular career path or not.</p>
                             <div className='linee'></div>
                         </div>
                         <div><img src={exams7}/></div>
@@ -82,14 +120,14 @@ function Home(){
                         <div><img src={exams8}/></div>
                         <div className='words'>
                             <h3>Attend Examination</h3>
-                            <p>Through our activities and technology, we are able to<br/> provide reliable data across several African products.</p>
+                            <p>Through our activities and technology, we are able to provide reliable data across several African products.</p>
                             <div className='linee'></div>
                         </div>
                     </div>
                     <div className='three-four'>
                         <div className='words'>
                             <h3>Select Preferable Subject</h3>
-                            <p>The aim of this to help you see things more clearly <br/>and get a good impression of the possible options,<br/> whether you have your heart set on a particular <br/>career path or not.</p>
+                            <p>The aim of this to help you see things more clearly and get a good impression of the possible options, whether you have your heart set on a particular career path or not.</p>
                             <div className='linee'></div>
                         </div>
                         <div><img src={exams9}/></div>
@@ -98,21 +136,61 @@ function Home(){
             </div>
             <div className='home-four'>
                 <h1>Available on These platforms</h1>
-                <div className='home-four-sub'><img src={exams10_1}/><div className='jd'></div><img src={exams10_2}/><div className='jd'></div><img src={exams10_3}/><div className='jd'></div><img src={exams10_4}/><div className='jd'></div><img src={exams10_5}/></div>
-            </div>
-            {/* <div>
-                <div className='home-five'>
-                    <h1>Most Popular Subjects</h1>
-                    <p>All your past questions all in one place. This is your one stop hub for through and precise </p>  exams preparations. 
+                <div className='home-four-sub'>
+                        <div className='home-four-sub-sub'>
+                            <div id='four-sub-sub'>
+                                <TbWorld/>
+                            </div>
+                            <div  className='four-sub-sub'>
+                             <h3>Web</h3>
+                                <Link  to='/register'><p>Get Started</p></Link>
+                            </div>
+                        </div>
+                        <div  className='home-four-sub-sub' id='four-sub'>
+                            <div id='four-sub-sub'>
+                                <BsApple/>
+                            </div>
+                            <div  className='four-sub-sub'> 
+                                <h3>App Store</h3>
+                                <Link><p>Download Now</p></Link>
+                            </div>
+                        </div>
+                        <div  className='home-four-sub-sub' id='four-sub'>
+                            <div id='four-sub-sub'>
+                                <BsGooglePlay/>
+                            </div>
+                            <div  className='four-sub-sub'>
+                                <h3>Play store</h3>
+                                <Link to='https://play.google.com/store/apps/details?id=com.exams_africa&pli=1'><p>Download Now</p></Link>
+                            </div>
+                        </div>
+                        <div  className='home-four-sub-sub' id='four-sub'>
+                            <div id='four-sub-sub'>
+                                <BsTelegram/>
+                            </div>
+                            <div className='four-sub-sub'>
+                                <h3>Telegram </h3>
+                                <Link><p>Coming soon</p></Link>
+                            </div>
+                        </div>
+                        <div  className='home-four-sub-sub' id='four-sub'>
+                            <div id='four-sub-sub'>
+                                <FaWhatsapp/>
+                            </div>
+                            <div className='four-sub-sub'>
+                                <h3>Whatsapp</h3>
+                                <Link><p>Coming soon</p></Link>
+                            </div>
+                        </div>
                 </div>
-            </div> */}
+            </div>
             <div  className='home-five'>
-                <h1>Use the Exam.Africa </h1><h1>Platform the right way</h1>
+                <h1>Use the Exam.Africa Platform the right way</h1>
                 <p>Learn the essential ways to successfully maximize the Platform for a exam success.</p>
             </div>
-            {/* <div className='video'>
-                <VideoPlayer src={videoSrc} poster={poster} width='720' height='420'/>
-            </div> */}
+            <div className='video'>
+                <video src={vid} controls />
+            </div>
             <Footer/>
         </div>
     )

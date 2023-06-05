@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Styles/ContactUs.css'
 import Footer from './Footer';
-import location from '../assets/location.png';
-import fb from '../assets/fb.png';
-import  linkd from '../assets/linkd.png';
-import instaa from '../assets/instaa.png';
 import icon from '../assets/Icon Artwork.png';
 import { Link } from 'react-router-dom';
+import {MdLocationOn} from 'react-icons/md'
+import {FaLinkedinIn, FaTwitter, FaInstagram, FaFacebookF,} from 'react-icons/fa'
+
+
+
 
 
 function ContactUs(){
@@ -17,7 +18,7 @@ function ContactUs(){
                     <div>
                         <h3>Support</h3>
                         <h1>How can we help you?</h1>
-                        <p>We Will Open The World Of Knowledge For You! This is the latest online<br/> examination system you will ever need! </p>
+                        <p>We Will Open The World Of Knowledge For You! This is the latest online examination system you will ever need! </p>
                     </div>
                 </div>
             </div>
@@ -26,18 +27,20 @@ function ContactUs(){
                 <div className='contact-two-one'>
                     <div>
                         <h1>Contact Us</h1>
-                        <p className='wale'>We Will Open The World Of Knowledge For You! This is the latest online <br/>examination system you will ever need! </p>
+                        <p className='wale'>We Will Open The World Of Knowledge For You! This is the latest online examination system you will ever need! </p>
                     </div>
                     <div className='contact-two-sub2'>
                         <div className='sub2'>
                             <div>
                             <h4>Head Office</h4>
                             <p>17/18 Folabi Baker street</p> Agungi, Lekki, Lagos Nigeria
-                            <div className='location'><img src={location} alt="" /> <p style={{color:  '#002099'}}>Get directions</p></div>
+                            <div className='location'><MdLocationOn/> <p >Get directions</p></div>
                             <p>+234 4863 33773E</p>xamsafricainfo.com
                             </div>
-                            <Link to='https://www.linkedin.com/company/exams-africa/'><img src={linkd} alt="" /></Link>
-                            <img src="" alt="" /><img src={instaa} alt="" /><img src={fb} alt="" />
+                            <Link to='https://www.linkedin.com/company/exams-africa/'><FaLinkedinIn/></Link>
+                            <Link to='https://www.instagram.com/examsafrica/'><FaTwitter/></Link>
+                            <Link to='https://exams.africa/#0'><FaInstagram/></Link>
+                            <Link to='https://exams.africa/#0'><FaFacebookF/></Link>
                         </div>
                     </div>
                 </div>

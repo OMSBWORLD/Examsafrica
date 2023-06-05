@@ -17,14 +17,15 @@ function LogIn(){
             <div className='login-parent'>
                 <div className='login'>
                     <div className='login-one'>
-                        <h1>Login to Continue</h1>
+                        <h1>Login To Account</h1>
                     </div>
                     <div className='login-two'>
                         <div className='login-sub-one'>
-                            <label>Username</label>
+                            <label>Username/Phone No</label>
                             <input type="text" />
                             <label>Password</label>
                             <input type="password" />
+                            <Link className='forget'>Forgot Password</Link>
                             <button style={{color: '#ffffff', background: '#1178FF', height: '50px', width: '60%', border: 'none',}}> Login</button>
                         </div>
                         <div className='login-sub-two'>

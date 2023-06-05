@@ -26,10 +26,12 @@
 .middle-sub h3{
     color: #1C0A00;
     font-size: 30px;
+    font-family: 'Mulish', sans-serif;
 }
 .middle-sub p{
     color: #1C0A00C7 78%;
     margin-top: 20px;
+    font-family: 'Mulish', sans-serif;
 }
 .middle-sub button{
    height: 50px;

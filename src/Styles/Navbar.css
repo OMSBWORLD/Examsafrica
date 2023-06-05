@@ -22,12 +22,12 @@ button, a{
     align-items: center;
 }
 .nav-one{
-    width: 50%;
+    width: 70%;
 }
 .nav-two, .mobile-link{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 30%;
 }
 .bars, .times{
     display: none;
@@ -39,7 +39,7 @@ button, a{
     align-items: center;
 }
 .nav-two-one a{
-    color: #00040D;
+    color: #002099;
 }
 .nav-two-two{
     width: 40%;
@@ -65,7 +65,7 @@ button, a{
         align-items: center;
     }
     .nav-one{
-        width: 50%;
+        width: 70%;
     }
     .nav-two{
         display: none;

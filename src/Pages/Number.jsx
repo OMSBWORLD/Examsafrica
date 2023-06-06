@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
+import '../Styles/Number.css'
 
 function Number() {
   const [countryState, setCountryState] = useState({
@@ -55,9 +56,7 @@ function Number() {
             </select>
           </div>
           <div className="number-two-grand">
-            {loading ? (
-              <p>Loading...</p>
-            ) : searchSelectedCountry ? (
+            {searchSelectedCountry && (
               <div className='number-two'>
                 <div className="number-two-one">
                   <img
@@ -75,7 +74,7 @@ function Number() {
                   <input type="number" className="number-input" />
                 </div>
               </div>
-            ) : null}
+            )}
           </div>
         </div>
       </div>

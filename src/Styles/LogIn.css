@@ -36,6 +36,11 @@
     height: 60vh;
     width: 90%;
 }
+.login-sub-one span{
+    position: absolute;
+    top: 340px;
+    margin-left: 345px;
+}
 .login-sub-two{
     width: 90%;
     display: flex;
@@ -130,4 +135,10 @@ label{
         font-family: 'Mulish', sans-serif; 
         text-decoration: underline;
       }
+      .login-sub-one span{
+        position: absolute;
+        right: 120px;
+        margin-top: 20px;
+        
+    }
 }

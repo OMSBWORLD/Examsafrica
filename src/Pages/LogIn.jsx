@@ -1,9 +1,10 @@
 import React from 'react';
-import '../Styles/Login.css'
+import '../Styles/LogIn.css'
 import home from '../assets/exams2.png';
 import { Link } from 'react-router-dom';
 import left from '../assets/left.png'
 import right from '../assets/right.png'
+import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
 
 function LogIn(){
     return(
@@ -23,7 +24,7 @@ function LogIn(){
                         <div className='login-sub-one'>
                             <label>Username/Phone No</label>
                             <input type="text" />
-                            <label>Password</label>
+                            <label>Password</label><span><AiOutlineEyeInvisible/></span>
                             <input type="password" />
                             <Link className='forget'>Forgot Password</Link>
                             <button style={{color: '#ffffff', background: '#1178FF', height: '50px', width: '60%', border: 'none',}}> Login</button>

@@ -58,7 +58,7 @@ function Register(){
                             <div className='password'>
                                 <div className='log-one'>
                                     <label>Password</label>
-                                    <input type='password'/>
+                                    <input type='password'/><span className='span1'><AiOutlineEyeInvisible/></span>
                                     {/* <div className="input-container">
                                         <input type={passwordVisible ? 'text' : 'password'}  />
                                         {passwordVisible ? (
@@ -70,7 +70,7 @@ function Register(){
                                 </div>
                                 <div className='log-one'>
                                     <label>Confirm Password</label>
-                                    <input type='password'/>
+                                    <input type='password'/><span className='span2'><AiOutlineEyeInvisible/></span>
                                     {/* <div className="input-container">
                                         <input type={passwordVisible ? 'text' : 'password'}  />
                                         {passwordVisible ? (
